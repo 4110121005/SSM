@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd http://www.springframework.org/schema/context https://www.springframework.org/schema/context/spring-context.xsd">
+
+    <!-- 配置一个Car类型的Bean，id为car -->
+    <bean id="car" class="cn.edu.xcu.ioc.Car">
+        <!-- 设置car的品牌 -->
+        <property name="brand" value="BYD"/>
+        <!-- 设置car的价格 -->
+        <property name="price" value="350000"/>
+    </bean>
+
+    <!-- 配置一个User类型的Bean，id为user -->
+    <bean id="user" class="cn.edu.xcu.ioc.User">
+        <!-- 设置user的名字 -->
+        <property name="name" value="JiangWei"/>
+        <!-- 设置user的年龄 -->
+        <property name="age" value="22"/>
+        <!-- 将car Bean注入到user的car属性中 -->
+        <property name="car" ref="car"/>
+    </bean>
+</beans>

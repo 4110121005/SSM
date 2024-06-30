@@ -1,6 +1,7 @@
 package cn.edu.xcu.mapper;
 
 import cn.edu.xcu.pojo.Employee;
+import org.apache.ibatis.annotations.Select;
 
 import java.util.List;
 
