@@ -25,24 +25,23 @@
             <scope>test</scope>
         </dependency>
 
-        <!--Mybatis依赖-->
+        <!--
+          Mybatis依赖
+          提供与数据库交互的 API 和运行时环境
+        -->
         <dependency>
             <groupId>org.mybatis</groupId>
             <artifactId>mybatis</artifactId>
             <version>3.5.6</version>
         </dependency>
-        <!--Mysql连接依赖-->
+        <!--
+          Mysql连接依赖
+          连接目标数据库所需的 JDBC 驱动程序
+        -->
         <dependency>
             <groupId>mysql</groupId>
             <artifactId>mysql-connector-java</artifactId>
             <version>8.0.33</version>
         </dependency>
-        <dependency>
-            <groupId>junit</groupId>
-            <artifactId>junit</artifactId>
-            <version>4.13.1</version>
-            <scope>test</scope>
-        </dependency>
-
     </dependencies>
 </project>
