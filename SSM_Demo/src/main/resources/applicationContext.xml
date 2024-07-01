@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+           http://www.springframework.org/schema/beans/spring-beans.xsd
+           http://www.springframework.org/schema/context
+            http://www.springframework.org/schema/context/spring-context.xsd">
+
+    <!-- 开启注解的扫描-->
+    <context:component-scan base-package="cn.edu.xcu.service"/>
+
+    <!--
+        Spring 整合 Mybatis 框架
+    -->
+    <!-- 1.引入数据库连接信息的属性文件 -->
+    <context:property-placeholder location="classpath:db.properties"/>
+    <!-- 2.将 mybatis 配置环境集成到 spring 中，交由 Spring 托管 -->
+    <bean id="dataSource" class="com.alibaba.druid.pool.DruidDataSource">
+        <property name="driverClassName" value="${mysql.driver}"/>
+        <property name="url" value="${mysql.url}"/>
+        <property name="username" value="${mysql.username}"/>
+        <property name="password" value="${mysql.password}"/>
+    </bean>
+    <!--3. 将 SqlSessionFactory 交给 Spring 托管-->
+    <bean id="sqlSessionFactory" class="org.mybatis.spring.SqlSessionFactoryBean">
+        <!-- 加载数据环境   -->
+        <property name="dataSource" ref="dataSource"/>
+        <!--  绑定 mybatis 配置文件     -->
+        <property name="configLocation" value="classpath:mybatis-config.xml"/>
+    </bean>
+    <!--4 将 SqlSession 对象的加载交给 Spring 托管  -->
+    <bean id="sqlSession" class="org.mybatis.spring.SqlSessionTemplate">
+        <!-- 按照 mybatis 的习俗，通过工厂获得 SqlSession 会话对象       -->
+        <constructor-arg name="sqlSessionFactory" ref="sqlSessionFactory"/>
+    </bean>
+    <!--5.扫描 Dao 包，创建动态代理对象, 会自动存储到 spring IOC容器中-->
+    <bean class="org.mybatis.spring.mapper.MapperScannerConfigurer">
+        <!--指定要扫描的 dao 包-->
+        <property name="basePackage" value="cn.edu.xcu.dao"/>
+    </bean>
+</beans>

@@ -12,6 +12,7 @@
         <module>Mybatis_Demo</module>
         <module>Spring_Demo</module>
         <module>SpringMVC_Demo</module>
+        <module>SSM_Demo</module>
     </modules>
 
     <properties>

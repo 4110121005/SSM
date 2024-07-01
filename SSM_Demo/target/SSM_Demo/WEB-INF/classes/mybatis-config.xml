@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  ~ @author JiangWei
+  ~ @version 1.0
+  ~ @description Mybatis配置文件
+  -->
+<!DOCTYPE configuration
+        PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-config.dtd">
+<configuration>
+
+    <!--设置映射文件中需要使用的类型的别名-->
+    <typeAliases>
+        <package name="cn.edu.xcu.domain"/>
+    </typeAliases>
+
+    <!-- 加载映射文件 -->
+    <mappers>
+        <!-- dao 层的所有的接口都可以使用 -->
+        <package name="cn.edu.xcu.dao"/>
+    </mappers>
+</configuration>

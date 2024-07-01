@@ -1,1 +1,1 @@
-SSM中各框架的使用和简单整合
+Mybatis、Spring 和 Spring MVC 框架的使用及简单整合
