@@ -1,44 +1,54 @@
 ## 项目依赖
 
-下面是 Spring 项目最基础的依赖（最新版本，截止2024.6.30）：
+较新版本，截止2024.6.30：
 
 ```
-<!--
-  Spring 的核心模块 Spring-core
-  提供依赖注入（DI）和控制反转（IoC）等基础功能
--->
-<dependency>
+  <!--
+    1、核心模块 Spring-core
+  -->
+  <dependency>
     <groupId>org.springframework</groupId>
     <artifactId>spring-core</artifactId>
     <version>6.1.3</version>
-</dependency>
-
-<!--
-  提供 Bean 工厂和 Bean 的定义，用于管理和配置应用程序中的对象
--->
-<dependency>
+  </dependency>
+  
+  <!--
+    2、Spring IOC 的基础实现，包含访问配置文件、创建和管理 bean 等
+  -->
+  <dependency>
     <groupId>org.springframework</groupId>
-    <artifactId>spring-beans</artifactId>
-    <version>6.1.3</version>
-</dependency>
-
-<!--
-  构建在 core 模块之上，提供应用程序上下文，用于管理 bean 的生命周期和配置
--->
-<dependency>
+      <artifactId>spring-beans</artifactId>
+      <version>6.1.3</version>
+  </dependency>
+  
+  <!--
+    3、构建于 core 和 beans 模块之上
+      提供应用程序上下文功能，例如国际化、事件传播、资源加载等
+      此外还提供许多企业级服务的支持，有邮件服务、任务调度，EJB集成、远程访问、缓存以及多种视图层框架的支持。
+  -->
+  <dependency>
     <groupId>org.springframework</groupId>
     <artifactId>spring-context</artifactId>
     <version>6.1.3</version>
-</dependency>
-
-<!--
-面向切面编程（AOP）的支持，用于实现横切关注点，例如日志记录和事务管理。
--->
-<dependency>
-  <groupId>org.springframework</groupId>
-  <artifactId>spring-aop</artifactId>
-  <version>6.1.3</version>
-</dependency>
+  </dependency>
+  
+  <!--
+    4、面向切面编程（AOP）的支持，用于实现横切关注点，例如日志记录和事务管理。
+  -->
+  <dependency>
+      <groupId>org.springframework</groupId>
+      <artifactId>spring-aop</artifactId>
+      <version>6.1.3</version>
+  </dependency>
+  
+  <!--
+    5、（可选）对JDBC 的简单封装。
+  -->
+  <dependency>
+    <groupId>org.springframework</groupId>
+    <artifactId>spring-jdbc</artifactId>
+    <version>6.1.3</version>
+  </dependency>
 ```
 
 ## 资源目录
