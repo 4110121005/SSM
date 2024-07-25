@@ -11,7 +11,8 @@
   <component name="ChangeListManager">
     <list default="true" id="59e696e1-6cc4-4637-8e74-11f2a9e0d832" name="更改" comment="依赖更新">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Mybatis_Demo/src/main/resources/mybatis.sql" beforeDir="false" afterPath="$PROJECT_DIR$/Mybatis_Demo/mybatis.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SSM_Demo/src/main/resources/ssm.sql" beforeDir="false" afterPath="$PROJECT_DIR$/SSM_Demo/ssm.sql" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -62,61 +63,61 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_ADD_EXTERNAL_FILES": "true",
-    "HTTP 请求.generated-requests | #3.executor": "Run",
-    "HTTP 请求.generated-requests中的所有.executor": "Run",
-    "JUnit.AOPTest.executor": "Run",
-    "JUnit.EmployeeTest.executor": "Run",
-    "JUnit.IocTest.executor": "Run",
-    "Maven.SSM [clean].executor": "Run",
-    "Maven.SSM [validate].executor": "Run",
-    "Maven.SSM_Demo [clean].executor": "Run",
-    "Maven.SpirngBoot_Demo [clean].executor": "Run",
-    "RequestMappingsPanelOrder0": "0",
-    "RequestMappingsPanelOrder1": "1",
-    "RequestMappingsPanelWidth0": "75",
-    "RequestMappingsPanelWidth1": "75",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "Spring Boot.SpringBootDemoApplication.executor": "Run",
-    "Tomcat 服务器.Tomcat 10.executor": "Run",
-    "Tomcat 服务器.Tomcat.executor": "Run",
-    "git-widget-placeholder": "main",
-    "ignore.virus.scanning.warn.message": "true",
-    "jdk.selected.JAVA_MODULE": "21",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "G:/Github/SSM/SpirngBoot_Demo/src/main/resources/static",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "模块",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.21609196",
-    "settings.editor.selected.configurable": "preferences.pluginManager",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;HTTP 请求.generated-requests | #3.executor&quot;: &quot;Run&quot;,
+    &quot;HTTP 请求.generated-requests中的所有.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.AOPTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.EmployeeTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.IocTest.executor&quot;: &quot;Run&quot;,
+    &quot;Maven.SSM [clean].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.SSM [validate].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.SSM_Demo [clean].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.SpirngBoot_Demo [clean].executor&quot;: &quot;Run&quot;,
+    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
+    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
+    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
+    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;Spring Boot.SpringBootDemoApplication.executor&quot;: &quot;Run&quot;,
+    &quot;Tomcat 服务器.Tomcat 10.executor&quot;: &quot;Run&quot;,
+    &quot;Tomcat 服务器.Tomcat.executor&quot;: &quot;Run&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;21&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;G:/Github/SSM/SpirngBoot_Demo/src/main/resources/static&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;模块&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.21609196&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
-  "keyToStringList": {
-    "DatabaseDriversLRU": [
-      "mysql"
+  &quot;keyToStringList&quot;: {
+    &quot;DatabaseDriversLRU&quot;: [
+      &quot;mysql&quot;
     ]
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="G:\Github\SSM\SpirngBoot_Demo\src\main\resources\static" />
       <recent name="G:\Github\SSM\SpirngBoot_Demo\src\main\resources\static\plugins" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="G:\Github\SSM\SSM_Demo" />
+      <recent name="G:\Github\SSM\Mybatis_Demo" />
+      <recent name="G:\Github\SSM\SpirngBoot_Demo" />
       <recent name="G:\Github\SSM\SpirngBoot_Demo\src\main\resources\static" />
       <recent name="G:\Github\SSM\SpirngBoot_Demo\src\main\resources\static\plugins" />
-      <recent name="G:\Github\SSM\SpirngBoot_Demo\src\main\resources\static\" />
-      <recent name="G:\Github\SSM\SpringBoot_Demo\src\main\java\cn\edu\xcu" />
-      <recent name="G:\Github\SSM\Mybatis_Demo\src\main\resources" />
     </key>
   </component>
   <component name="RunManager" selected="Spring Boot.SpringBootDemoApplication">
@@ -344,6 +345,7 @@
       <workItem from="1721371071538" duration="2831000" />
       <workItem from="1721373924371" duration="9079000" />
       <workItem from="1721799968485" duration="15407000" />
+      <workItem from="1721908468562" duration="109000" />
     </task>
     <task id="LOCAL-00001" summary="依赖更新">
       <option name="closed" value="true" />
